@@ -1,0 +1,21 @@
+public class Kata {
+  public static String rps(String p1, String p2) {
+    // your code
+    
+        //System.out.println("Enter 0 for paper , 1 for rock ,2 for scissor : ");
+        String A[]={"paper","rock","scissors"};
+         String s="";
+        if (p1.equals(p2))
+        {
+            s="Draw!";
+            
+        }else if(p1.equals(A[0])&&p2.equals(A[1])||p1.equals(A[1])&&p2.equals(A[2])||p1.equals(A[2])&&p2.equals(A[0])){       
+          s= "Player 1 won!";
+        }
+        else{
+          s= "Player 2 won!"; 
+          
+        }  
+    return s;
+  }
+}
